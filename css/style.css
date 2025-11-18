@@ -23,7 +23,7 @@
 .nav-items {
     padding: 10px;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 h3 {
@@ -48,6 +48,24 @@ h3 {
     height: calc(100vh - 90px); 
     padding: 20px;
     background-color: black;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 3;
+    position: relative;
+}
+
+.install img {
+    width: 20px;
+}
+
+.user img {
+    width: 40px;
+    background-color: grey;
+}
+
+.download {
+    position: absolute;
+    bottom: 10px;
 }
 
 /* MUSIC SPACE */
@@ -68,18 +86,32 @@ h3 {
 
 .music-container {
     display: flex;
-    max-width: calc(100% - 300px);
     padding-top: 30px;
     padding-bottom: 40px;
 }
 
 .music-items {
-    gap: 10px; /* aggiustare */
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 6);
+    text-align: center;
+}
+
+.music-items h4 {
+    font-size: 13px;
+    padding-bottom: 7px;
+}
+
+.music-items h5 {
+    font-size: 10px;
 }
 
 .music-items img {
     background-size: contain;
     padding-bottom: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* PLAYER */
