@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* UTILITY CLASS */
@@ -9,6 +10,17 @@
     padding: 20px 20px;
     padding-right: 80px;
 }
+
+.text-gray {
+    color: rgb(110, 110, 110);
+}
+
+.nav-items {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
 
 
 /* NORMAL */
@@ -27,6 +39,13 @@
 .music-space {
     flex-grow: 1;
     background-color: rgb(25, 25, 25);
+}
+
+.music-space .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 /* PLAYER */
