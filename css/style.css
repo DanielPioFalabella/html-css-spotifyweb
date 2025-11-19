@@ -54,6 +54,8 @@ h3 {
 
 
 
+
+
 /* NORMAL */
 .container {
     display: flex;
@@ -69,6 +71,10 @@ h3 {
     font-weight: 700;
     line-height: 3;
     position: relative;
+}
+
+.start-none {
+    display: none;
 }
 
 .search-bar li {
@@ -155,6 +161,7 @@ h3 {
     margin-top: -20px;
     margin-left: -20px;
     padding-right: 20px;
+    z-index: 100;
 }
 
 .upgrade {
@@ -168,6 +175,7 @@ h3 {
 
 .music-space .search-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 60px;

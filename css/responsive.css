@@ -1,0 +1,66 @@
+/* RESPONSIVE 920px */
+
+@media screen and (max-width: 920px) {
+    .music-container {
+        flex-wrap: wrap;
+        
+    }
+
+    .music-items {
+        width: calc(100% / 4);
+    }
+}
+
+/* RESPONSIVE 680px */
+@media screen and (max-width: 680px) {
+    .music-items {
+        width: calc(100% / 2);
+    }
+}
+
+
+
+/* RESPONSIVE 540px */
+@media screen and (max-width: 540px) {
+    .lateral-bar {
+        width: 50px;
+        min-width: 50px;
+        padding: 20px 10px;
+    }
+
+    .lateral-none {
+        display: none;
+    }
+
+    .lateral-bar .search-bar {
+    padding-left: 3px;
+    }
+
+    .icon {
+        display: inline-block;
+    }
+
+    .download {
+        padding-bottom: 6px;
+    }
+
+    .download .install {
+        border-bottom: none;
+        padding-left: 5px;
+        padding-bottom: 13px;
+    }
+
+    .download .user {
+        padding-left: 3px;
+    }
+
+    .start-none {
+        display: inline-block;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
