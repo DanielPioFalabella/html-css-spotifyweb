@@ -8,8 +8,8 @@
 
 /* UTILITY CLASS */
 .logo {
-    padding: 20px 0px;
-    padding-right: 80px;
+    padding-bottom: 20px 0px;
+    padding-right: 40px;
 }
 
 .text-gray {
@@ -35,6 +35,10 @@ h3 {
     border-radius: 50%;
 }
 
+.img-width {
+    width: 28px;
+}
+
 
 
 /* NORMAL */
@@ -44,7 +48,7 @@ h3 {
 
 /* BARRA LATERALE */
 .lateral-bar {
-    width: 250px;
+    min-width: 200px;
     height: calc(100vh - 90px); 
     padding: 20px;
     background-color: black;
@@ -54,8 +58,22 @@ h3 {
     position: relative;
 }
 
+.search-bar li {
+    position: relative;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
 .install img {
     width: 20px;
+}
+
+.install {
+    border-bottom: 1px solid grey;
+    padding-right: 70px;
 }
 
 .user img {
@@ -66,6 +84,13 @@ h3 {
 .download {
     position: absolute;
     bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download .user img {
+    width: 22px;
+    padding: 0px 1px;
 }
 
 /* MUSIC SPACE */
