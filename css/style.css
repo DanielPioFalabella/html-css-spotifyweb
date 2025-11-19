@@ -39,6 +39,11 @@ h3 {
     width: 28px;
 }
 
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
 
 
 /* NORMAL */
@@ -170,4 +175,41 @@ h3 {
 .player {
     height: 90px;
     background-color: rgb(50, 50, 50);
+    display: flex;
+    padding: 20px;
+}
+
+.song-player {
+    display: flex;
+}
+
+.song-name-items {
+    display: flex;
+    width: 36px;
+}
+
+.song-name-items img {
+    background-size: contain;
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-player {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+}
+
+.text-player h4 {
+    font-size: 11px;
+}
+
+.text-player h5 {
+    font-size: 9px;
+}
+
+.fa-heart, .fa-folder {
+    color: rgb(110, 110, 110);
+    margin-right: 15px;
 }
