@@ -59,12 +59,31 @@ h3 {
 }
 
 .search-bar li {
-    position: relative;
+    padding-bottom: 10px;
 }
 
 .search-bar-container {
     display: flex;
     align-items: center;
+}
+
+.search-bar-container img {
+    padding-right: 5px;
+}
+
+.fa-square-plus {
+    position: absolute;
+    left: 14px;
+    font-size: 32px;
+}
+
+.relative {
+    position: relative;
+    left: 40px;
+}
+
+.playlist-name li:first-child {
+    padding-top: 8px;
 }
 
 .install img {
@@ -91,6 +110,14 @@ h3 {
 .download .user img {
     width: 22px;
     padding: 0px 1px;
+}
+
+.download .user span {
+    padding-left: 10px;
+}
+
+.padding-user {
+    padding-top: 8px;
 }
 
 /* MUSIC SPACE */
