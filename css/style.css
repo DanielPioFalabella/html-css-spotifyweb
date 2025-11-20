@@ -22,8 +22,10 @@
 
 .nav-items {
     padding: 10px;
+    padding-bottom: 5px;
     font-weight: 700;
     font-size: 12px;
+    position: relative;
 }
 
 h3 {
@@ -50,16 +52,41 @@ h3 {
 
 .hover-text:hover {
     color: white;
+    filter: opacity(1);
+}
+
+.hover-img {
+    position: relative;
 }
 
 .hover-img:hover {
     filter: opacity(0.5);
-    position: relative;
-    display: block;
+}
+
+.play:hover::after {
+    font-size: 40px;
     content: "\f144";
+    font-family: Font Awsome 7 fre;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+   transform: translate(-40%, -50%);
 }
 
 
+
+/*.fa-circle-play:hover::after {
+    display: inline-block;
+    font-size: 40px;
+    content: "\f144";
+    font-family: Font Awsome 7 free;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+   transform: translate(-40%, -50%);
+}*/
 
 
 /* NORMAL */
@@ -85,6 +112,19 @@ h3 {
 
 .search-bar li {
     padding-bottom: 10px;
+    position: relative;
+}
+
+.lateral-bar .search-bar li:hover::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;            
+    height: 80%;           
+    background-color: #b2ff1a;
+    border-radius: 2px;
 }
 
 .search-bar-container {
@@ -188,6 +228,18 @@ h3 {
     align-items: center;
     margin-top: 60px;
     margin-bottom: 30px;
+}
+
+.music-space .search-bar .nav-items:hover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 2px;
+  background-color: #b2ff1a;
+  border-radius: 2px;
 }
 
 .music-container {
