@@ -213,14 +213,28 @@
             </div>
         </div>
 
-        <div>
-            <div class="spotify-bar">
-            
+        <div class="spotify-bar-flex">
+            <div class="column">
+                <div class="spotify-bar display-flex">
+                    <div class="flex-direction-row">
+                        <i class="fa-solid fa-repeat"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                        <input type="range" id="music-bar" min="0" value="0">
+                </div>
             </div>
         </div>
 
-        <div>
-            <!-- controllo display, volume ecc... -->
+        <div class="player-dx">
+            <div class="player-dx">
+                <i class="fa-solid fa-list hover-text"></i>
+                <i class="fa-solid fa-tv hover-text"></i>
+                <i class="fa-solid fa-volume-high hover-text"></i>
+                    <div class="spotify-bar-audio">
+                        <input type="range" id="music-bar" min="0" value="0">
+                    </div>
+            </div>
         </div>
     </div>
 </body>
