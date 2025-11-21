@@ -9,12 +9,57 @@
     .music-items {
         width: calc(100% / 4);
     }
+
+    .player-sx {
+        width: 90px;
+    }
+
+    .music-bar {
+        width: 80px;
+    }
+
+    .player-center {
+        min-width: 380px;
+    }
+
+    .music-bar-center {
+        width: 280px;
+    }
+
+    .fa-list, .fa-tv, .fa-volume-high {
+    margin-right: 5px;
+    }
 }
 
 /* RESPONSIVE 680px */
 @media screen and (max-width: 680px) {
     .music-items {
         width: calc(100% / 2);
+    }
+
+    .player-sx {
+        width: 90px;
+        margin-right: 10px;
+    }
+
+    .music-bar {
+        width: 70px;
+    }
+
+    .player-center {
+        min-width: 300px;
+    }
+
+    .music-bar-center {
+        width: 200px;
+    }
+
+    .fa-list, .fa-tv, .fa-volume-high {
+    margin-right: 4px;
+    }
+
+    .player-dx {
+        margin-left: -20px;
     }
 }
 
@@ -62,5 +107,30 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+
+    .player-sx {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .music-bar {
+        width: 50px;
+    }
+
+    .player-center {
+        min-width: 250px;
+    }
+
+    .music-bar-center {
+        width: 150px;
+    }
+
+    .fa-list, .fa-tv, .fa-volume-high {
+        margin-right: 3px;
+    }
+
+    .text-player {
+        padding-right: 10px;
     }
 }

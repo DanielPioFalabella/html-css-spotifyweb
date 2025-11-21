@@ -33,7 +33,7 @@
                         <a>
                             <div class="search-bar-container hover-text">
                                 <img class="img-width icon hover-text" src="./imgs/home.svg" alt="">
-                                <span class="lateral-none">Home</span>
+                                <span class="lateral-none active">Home</span>
                             </div>
                         </a>
                     </li>
@@ -43,7 +43,7 @@
                         <a>
                             <div class="search-bar-container hover-text">
                                 <img class="img-width icon hover-text" src="./imgs/search.svg" alt="">
-                                <span class="lateral-none">Cerca</span>
+                                <span class="lateral-none active">Cerca</span>
                             </div>
                         </a>
                     </li>
@@ -52,7 +52,7 @@
                         <a>
                             <div class="search-bar-container hover-text">
                                 <img class="img-width icon hover-text" src="./imgs/libreria.svg" alt="">
-                                <span class="lateral-none">La tua libreria</span>
+                                <span class="lateral-none active">La tua libreria</span>
                             </div>
                         </a>
                     </li>
@@ -79,14 +79,14 @@
             <div class="download">
                 <a class="install text-gray">
                     <div class="search-bar-container hover-text">
-                    <img  class="" src="./imgs/download.svg" alt="">
-                    <span class="lateral-none">installa app</span>
+                        <img class="" src="./imgs/download.svg" alt="">
+                        <span class="lateral-none">installa app</span>
                     </div>
                 </a>
                 <a class="user text-white">
                     <div class="search-bar-container padding-user">
-                    <img class="border-radius" src="./imgs/profile.svg" alt="">
-                    <span class="lateral-none">Jhon Doe</span>
+                        <img class="border-radius" src="./imgs/profile.svg" alt="">
+                        <span class="lateral-none">Jhon Doe</span>
                     </div>
                 </a>
             </div>
@@ -94,18 +94,18 @@
 
         <!-- spazio dove ci saranno musica, playlist e brani da ascoltare -->
         <div class="music-space">
-            
+
             <div class="banner-upgrade">
                 <a class="upgrade">EFFETTUA L'APPGRADE</a>
             </div>
 
             <nav class="search-bar text-gray">
-                <a class="nav-items hover-text">IN EVIDENZA</a>
-                <a class="nav-items hover-text">PODCAST</a>
-                <a class="nav-items hover-text">CLASSIFICHE</a>
-                <a class="nav-items hover-text">GENERI E MOOD</a>
-                <a class="nav-items hover-text">NUOVE USCITE</a>
-                <a class="nav-items hover-text">SCOPRI</a>
+                <a class="nav-items hover-text active">IN EVIDENZA</a>
+                <a class="nav-items hover-text active">PODCAST</a>
+                <a class="nav-items hover-text active">CLASSIFICHE</a>
+                <a class="nav-items hover-text active">GENERI E MOOD</a>
+                <a class="nav-items hover-text active">NUOVE USCITE</a>
+                <a class="nav-items hover-text active">SCOPRI</a>
             </nav>
 
             <h3 class="text-white">Recently played</h3>
@@ -199,31 +199,29 @@
 
     <!-- player fisso -->
     <div class="player">
-        <div class="song-player">
-            <div class="song-name-items align-center">
+            <div class=" player-sx">
                 <img src="./imgs/sinister.jpeg" alt="">
-                <div class="text-player">
-                <h4 class="text-white">Sinister</h4>
-                <h5 class="text-gray hover-text underlined">Brano Nome</h5>
-            </div>
-            <div class="column">
-                <i class="fa-regular fa-heart hover-text"></i>
-                <i class="fa-regular fa-folder hover-text"></i>
-            </div>
-            </div>
-        </div>
-
-        <div class="spotify-bar-flex">
-            <div class="column">
-                <div class="spotify-bar display-flex">
-                    <div class="flex-direction-row">
-                        <i class="fa-solid fa-repeat"></i>
-                        <i class="fa-regular fa-circle-play"></i>
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                <div class="song-player">
+                    <div class="text-player">
+                        <h4 class="text-white">Sinister</h4>
+                        <h5 class="text-gray hover-text underlined">Brano Nome</h5>
                     </div>
-                        <input type="range" id="music-bar" min="0" value="0">
+
+                    <div class="column">
+                        <i class="fa-regular fa-heart hover-text"></i>
+                        <i class="fa-regular fa-folder hover-text"></i>
+                    </div>
                 </div>
             </div>
+
+        <div class="player-center">
+            <div class="input-player">
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+
+            <input type="range" class="music-bar music-bar-center" min="0" value="0">
         </div>
 
         <div class="player-dx">
@@ -231,9 +229,7 @@
                 <i class="fa-solid fa-list hover-text"></i>
                 <i class="fa-solid fa-tv hover-text"></i>
                 <i class="fa-solid fa-volume-high hover-text"></i>
-                    <div class="spotify-bar-audio">
-                        <input type="range" id="music-bar" min="0" value="0">
-                    </div>
+                    <input type="range" class="music-bar" min="0" value="0">
             </div>
         </div>
     </div>

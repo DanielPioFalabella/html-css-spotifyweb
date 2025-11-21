@@ -115,7 +115,7 @@ h3 {
     position: relative;
 }
 
-.lateral-bar .search-bar li:hover::after {
+.lateral-bar .search-bar-container .active::after {
     content: "";
     position: absolute;
     left: -20px;
@@ -220,6 +220,10 @@ h3 {
     font-weight: 500;
 }
 
+.upgrade:hover {
+    font-size: 13px;
+}
+
 .music-space .search-bar {
     display: flex;
     flex-wrap: wrap;
@@ -229,7 +233,7 @@ h3 {
     margin-bottom: 30px;
 }
 
-.music-space .search-bar .nav-items:hover::after {
+.music-space .search-bar .nav-items .active::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -280,26 +284,26 @@ h3 {
     padding: 20px;
 }
 
-.song-player {
+.player-sx {
     display: flex;
 }
 
-.song-name-items {
-    display: flex;
-    width: 36px;
-}
-
-.song-name-items img {
+.player-sx img {
     background-size: contain;
     margin-right: 10px;
     max-width: 100%;
     height: auto;
 }
 
+.song-player {
+    display: flex;
+    align-items: center;
+}
+
 .text-player {
     display: flex;
     flex-direction: column;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .text-player h4 {
@@ -315,38 +319,29 @@ h3 {
     margin-right: 15px;
 }
 
-.spotify-bar-flex {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-}
-
-.spotify-bar {
-    width: 400px;
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-}
-
-.display-flex {
+.player-center {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5px;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 420px;
 }
 
-.flex-direction-row {
+.input-player {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 25px;
 }
 
 .fa-circle-play, .fa-repeat, .fa-arrow-rotate-right {
     padding-bottom: 20px;
     color: white;
-    padding-right: 50px;
 }
 
-#music-bar {
-    width: 100%;
+.music-bar {
+    width: 120px;
+    margin: auto;
     -webkit-appearance: none;
     border-radius: 4px;
     height: 4px;
@@ -354,12 +349,16 @@ h3 {
     cursor: pointer;
 }
 
-#music-bar::-webkit-slider-thumb {
+.music-bar-center {
+    width: 380px;
+}
+
+.music-bar::-webkit-slider-thumb {
     background: #b2ff1a;
     opacity: 0;
 }
 
-#music-bar:hover::-webkit-slider-thumb {
+.music-bar:hover::-webkit-slider-thumb {
     background: #b2ff1a;
     opacity: 1;
 }  
@@ -368,3 +367,4 @@ h3 {
     display: flex;
     align-items: center;
 }
+
