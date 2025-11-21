@@ -41,11 +41,6 @@ h3 {
     width: 28px;
 }
 
-.align-center {
-    display: flex;
-    align-items: center;
-}
-
 .underlined:hover {
     text-decoration: underline;
 }
@@ -65,13 +60,18 @@ h3 {
 
 .play:hover::after {
     font-size: 40px;
+    background-image: url(../imgs/circle-play-solid.svg);
+    background-size: contain;
+    width: 30px;
+    height: auto;
+    background-repeat: no-repeat;
     content: "\f144";
-    font-family: Font Awsome 7 fre;
-    color: white;
+    font-family: Font Awsome 7 free;
+    color: transparent;
     position: absolute;
     top: 40%;
     left: 50%;
-   transform: translate(-40%, -50%);
+    transform: translate(-40%, -50%);
 }
 
 
@@ -106,6 +106,12 @@ h3 {
     position: relative;
 }
 
+.container-lateral-bar {
+    display: flex;
+    flex-direction: column;
+    gap: calc(100vh - 590px);
+}
+
 .start-none {
     display: none;
 }
@@ -115,7 +121,7 @@ h3 {
     position: relative;
 }
 
-.lateral-bar .search-bar-container .active::after {
+.lateral-bar .search-bar-container a .active::after {
     content: "";
     position: absolute;
     left: -20px;
@@ -138,6 +144,7 @@ h3 {
 }
 
 .fa-square-plus {
+    margin-left: -5px;
     position: absolute;
     font-size: 32px;
 }
@@ -149,6 +156,11 @@ h3 {
 
 .playlist-name li:first-child {
     padding-top: 8px;
+}
+
+.playlist-name {
+    overflow: auto;
+    height: 150px;
 }
 
 .install img {
@@ -167,7 +179,6 @@ h3 {
 }
 
 .download {
-    position: absolute;
     bottom: 10px;
     display: flex;
     flex-direction: column;
